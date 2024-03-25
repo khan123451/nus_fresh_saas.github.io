@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Total Status</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library -->
+    <script src="status.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="status.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="menu-container">
+        <div id="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <div id="menu-items" class="hidden">
+            <a href="status.html">Status</a>
+            <a href="map.html">Map</a>
+            <a href="account.html">Account</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Current Revenue</h2>
+        <p id="expenditureText">SGD$<h3 id="totalRevenue"></h3></p>
+    </div>
+
+    <div class="container">
+        <h2>Current Expenditure</h2>
+        <p id="expenditureText">SGD$<h3 id="totalExpenditure"></h3></p>
+    </div>
+
+    <div class="container">
+        <h2>Account Balance Over Time</h2>
+        <canvas id="balanceChart"></canvas>
+    </div>
+      
+    <div class="container">
+        <h2>Expenditure Categories</h2>
+        <canvas id="expenditurePieChart"></canvas>
+    </div>
+      
+    <div class="container">
+        <h2>Revenue Sources</h2>
+        <canvas id="revenueBarChart"></canvas>
+    </div>
+
+</body>
+</html>
