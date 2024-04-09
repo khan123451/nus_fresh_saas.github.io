@@ -8,21 +8,34 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-
 <div class="login-container">
+    <div class = "login-screen">
     <form id="login-form" onsubmit="return checkLogin()">
-        <h2>Login</h2>
+        <div class="UiUnicornLogo" style="width: 149.17px; height: 48px; padding-right: 101.17px; justify-content: flex-start; align-items: center; display: flex">
+            <img class="AvatarUiUnicornV2" style="width: 48px; height: 48px" src="icons/Fresh.png" />
+          </div>
+        <h2>Ready to Fresh</h2>
         <div class="input-group">
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" placeholder="Enter username" name="username" required>
         </div>
         <div class="input-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" placeholder="Enter password" name="password" required>
         </div>
+        <div>
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Remember me</label>
+        </div>
+        <br>
         <button type="submit">Login</button>
     </form>
+    </div>
+
+    <div class="login-img">
+    </div>
 </div>
+
 
 </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .login-form {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .login-image {
+    flex: 1;
+    height: 100%;
+    background: url('icons/fresh_wallpaper.jpeg') no-repeat center center;
+    background-size: cover;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <div class="login-form">
+    <h2>Login</h2>
+    <form action="/submit-your-login-form" method="post">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+  <div class="login-image">
+    <!-- Image is added via CSS -->
+  </div>
+</div>
+
+</body>
+</html>
